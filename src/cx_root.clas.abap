@@ -33,4 +33,16 @@ PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_root IMPLEMENTATION.
+  METHOD if_message~get_longtext.
+    RETURN. " todo, implement method
+  ENDMETHOD.
+  METHOD if_message~get_text.
+    RETURN. " todo, implement method
+  ENDMETHOD.
+  METHOD get_source_position.
+    RETURN. " todo, implement method
+  ENDMETHOD.
+  METHOD constructor.
+    RETURN. " todo, implement method
+  ENDMETHOD.
 ENDCLASS.
