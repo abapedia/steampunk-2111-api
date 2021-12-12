@@ -3,12 +3,12 @@ CLASS cx_swf_cpwf_api DEFINITION
   INHERITING FROM cx_static_check
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_dyn_msg.
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
 
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF wrong_callback_class,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '001',
@@ -17,7 +17,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF wrong_callback_class.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF wrong_status,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '010',
@@ -26,7 +26,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF wrong_status.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF wrong_status_found,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '023',
@@ -35,7 +35,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF wrong_status_found.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF request_not_found,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '009',
@@ -44,7 +44,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF request_not_found.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF invalid_bgrfc_destination,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '002',
@@ -53,7 +53,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF invalid_bgrfc_destination.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF invalid_retention_time,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '003',
@@ -62,7 +62,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF invalid_retention_time.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF request_alrdy_locked,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '011',
@@ -71,7 +71,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF request_alrdy_locked.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF request_lock_failed,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '012',
@@ -80,7 +80,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF request_lock_failed.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF instance_not_found,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '040',
@@ -89,7 +89,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF instance_not_found.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF workflow_definitions_fails,
         msgid TYPE symsgid VALUE 'SWF_CPWF_001',
         msgno TYPE symsgno VALUE '060',
@@ -98,7 +98,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF workflow_definitions_fails.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF http_error,
         msgid TYPE symsgid VALUE 'SWF_CPWF_002',
         msgno TYPE symsgno VALUE '050',
@@ -107,7 +107,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE 'ERROR_LOGID',
         attr4 TYPE scx_attrname VALUE '',
       END OF http_error.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF start_alrdy_sched,
       msgid TYPE symsgid VALUE 'SWF_CPWF_001',
       msgno TYPE symsgno VALUE '013',
@@ -116,7 +116,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF start_alrdy_sched.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF wrong_operation,
       msgid TYPE symsgid VALUE 'SWF_CPWF_001',
       msgno TYPE symsgno VALUE '014',
@@ -125,7 +125,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF wrong_operation.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF wrong_operation_retry_start,
       msgid TYPE symsgid VALUE 'SWF_CPWF_001',
       msgno TYPE symsgno VALUE '015',
@@ -134,7 +134,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF wrong_operation_retry_start.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF consumer_not_found,
       msgid TYPE symsgid VALUE 'SWF_CPWF_001',
       msgno TYPE symsgno VALUE '016',
@@ -143,7 +143,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF consumer_not_found.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF consumer_invalid,
       msgid TYPE symsgid VALUE 'SWF_CPWF_001',
       msgno TYPE symsgno VALUE '017',
@@ -152,7 +152,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF consumer_invalid.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF consumer_empty,
       msgid TYPE symsgid VALUE 'SWF_CPWF_001',
       msgno TYPE symsgno VALUE '018',
@@ -161,13 +161,13 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF consumer_empty.
-  DATA id TYPE string.
-  DATA error_code TYPE string.
-  DATA error_message TYPE string.
-  DATA error_logid TYPE string.
-  DATA valid_consumer_type TYPE swf_cpwf_consumer.
+    DATA id TYPE string.
+    DATA error_code TYPE string.
+    DATA error_message TYPE string.
+    DATA error_logid TYPE string.
+    DATA valid_consumer_type TYPE swf_cpwf_consumer.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -176,7 +176,7 @@ PUBLIC SECTION.
       !error_message TYPE string OPTIONAL
       !error_logid TYPE string OPTIONAL
       !valid_consumer_type TYPE swf_cpwf_consumer OPTIONAL.
-  METHODS get_attribute_value
+    METHODS get_attribute_value
     IMPORTING
       !iv_attr_name TYPE scx_attrname
     RETURNING

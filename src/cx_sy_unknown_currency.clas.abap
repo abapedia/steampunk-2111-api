@@ -4,18 +4,18 @@ CLASS cx_sy_unknown_currency DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_sy_unknown_currency TYPE c LENGTH 32 VALUE 'E8ECA2488DBD4046E10000000A421713'. "#EC NOTEXT
-  DATA currencycode TYPE string.
+    CONSTANTS cx_sy_unknown_currency TYPE c LENGTH 32 VALUE 'E8ECA2488DBD4046E10000000A421713'. "#EC NOTEXT
+    DATA currencycode TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       VALUE(parameter) TYPE string OPTIONAL
       !currencycode TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_unknown_currency IMPLEMENTATION.

@@ -3,11 +3,11 @@ CLASS cx_abap_decfloat_parse_err DEFINITION
   INHERITING FROM cx_static_check
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_message.
 
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF cx_abap_decfloat_parse_err,
       msgid TYPE symsgid VALUE 'ABAP_DECFLOAT',
       msgno TYPE symsgno VALUE '000',
@@ -16,7 +16,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF cx_abap_decfloat_parse_err.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF incomplete_exponent,
       msgid TYPE symsgid VALUE 'ABAP_DECFLOAT',
       msgno TYPE symsgno VALUE '004',
@@ -25,7 +25,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF incomplete_exponent.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF sign_behind_exponent,
       msgid TYPE symsgid VALUE 'ABAP_DECFLOAT',
       msgno TYPE symsgno VALUE '005',
@@ -34,7 +34,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF sign_behind_exponent.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF invalid_syntax,
       msgid TYPE symsgid VALUE 'ABAP_DECFLOAT',
       msgno TYPE symsgno VALUE '006',
@@ -43,7 +43,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF invalid_syntax.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF too_many_decimal_places,
       msgid TYPE symsgid VALUE 'ABAP_DECFLOAT',
       msgno TYPE symsgno VALUE '009',
@@ -52,14 +52,14 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF too_many_decimal_places.
-  DATA input TYPE string.
+    DATA input TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL
       !input TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_abap_decfloat_parse_err IMPLEMENTATION.

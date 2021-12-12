@@ -4,22 +4,22 @@ CLASS cx_abap_datfm_invalid_date DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_abap_datfm_invalid_date TYPE c LENGTH 32 VALUE '42E77505469C2AC7E10000000A1146E5' ##NO_TEXT.
-  DATA invalid_date TYPE cl_abap_datfm=>ty_datext.
-  DATA is_period TYPE abap_bool.
+    CONSTANTS cx_abap_datfm_invalid_date TYPE c LENGTH 32 VALUE '42E77505469C2AC7E10000000A1146E5' ##NO_TEXT.
+    DATA invalid_date TYPE cl_abap_datfm=>ty_datext.
+    DATA is_period TYPE abap_bool.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !invalid_date TYPE cl_abap_datfm=>ty_datext OPTIONAL
       !is_period TYPE abap_bool OPTIONAL.
 
-  METHODS if_message~get_text
+    METHODS if_message~get_text
     REDEFINITION.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_abap_datfm_invalid_date IMPLEMENTATION.

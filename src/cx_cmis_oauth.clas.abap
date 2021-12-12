@@ -13,7 +13,7 @@ CLASS cx_cmis_oauth DEFINITION
         !textid       LIKE if_t100_message=>t100key OPTIONAL
         !previous     LIKE previous OPTIONAL
         !message_text TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_cmis_oauth IMPLEMENTATION.

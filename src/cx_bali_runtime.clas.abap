@@ -4,15 +4,15 @@ CLASS cx_bali_runtime DEFINITION
   ABSTRACT
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_dyn_msg.
-  INTERFACES if_t100_message.
-  METHODS constructor
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_bali_runtime IMPLEMENTATION.

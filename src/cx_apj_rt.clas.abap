@@ -3,12 +3,12 @@ CLASS cx_apj_rt DEFINITION
   INHERITING FROM cx_static_check
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_dyn_msg.
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
 
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF cx_job_doesnt_exist,
        msgid TYPE symsgid VALUE 'APJ_RT',
        msgno TYPE symsgno VALUE '003',
@@ -17,7 +17,7 @@ PUBLIC SECTION.
        attr3 TYPE scx_attrname VALUE '',
        attr4 TYPE scx_attrname VALUE '',
       END OF cx_job_doesnt_exist.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF cx_job_cancel_failed,
        msgid TYPE symsgid VALUE 'APJ_RT',
        msgno TYPE symsgno VALUE '004',
@@ -26,7 +26,7 @@ PUBLIC SECTION.
        attr3 TYPE scx_attrname VALUE '',
        attr4 TYPE scx_attrname VALUE '',
       END OF cx_job_cancel_failed.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF cx_no_auth_to_delete,
        msgid TYPE symsgid VALUE 'APJ_RT',
        msgno TYPE symsgno VALUE '005',
@@ -36,7 +36,7 @@ PUBLIC SECTION.
        attr4 TYPE scx_attrname VALUE '',
       END OF cx_no_auth_to_delete.
 
-  CONSTANTS:
+    CONSTANTS:
      BEGIN OF cx_no_auth_to_read_details,
        msgid TYPE symsgid VALUE 'APJ_RT',
        msgno TYPE symsgno VALUE '028',
@@ -46,25 +46,25 @@ PUBLIC SECTION.
        attr4 TYPE scx_attrname VALUE '',
      END OF cx_no_auth_to_read_details.
 
-  DATA bapimsg TYPE bapiret2.
-  DATA:
+    DATA bapimsg TYPE bapiret2.
+    DATA:
     object TYPE c LENGTH 40.
-  DATA uname TYPE uname.
+    DATA uname TYPE uname.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL
       !bapimsg TYPE bapiret2 OPTIONAL
       !object LIKE object OPTIONAL
       !uname TYPE uname OPTIONAL.
-  METHODS get_bapiret2
+    METHODS get_bapiret2
     RETURNING
       VALUE(rs_msg) TYPE bapiret2.
 
-  METHODS if_message~get_longtext
+    METHODS if_message~get_longtext
     REDEFINITION.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_apj_rt IMPLEMENTATION.

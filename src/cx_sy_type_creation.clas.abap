@@ -3,15 +3,15 @@ CLASS cx_sy_type_creation DEFINITION
   INHERITING FROM cx_dynamic_check
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_sy_type_creation TYPE c LENGTH 32
+    CONSTANTS cx_sy_type_creation TYPE c LENGTH 32
  VALUE '726C513F9E6BF03DE10000000A114BF5'. "#EC NOTEXT
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_type_creation IMPLEMENTATION.

@@ -4,9 +4,9 @@ CLASS cx_abap_decfloat_invalid_char DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF invalid_character,
       msgid TYPE symsgid VALUE 'ABAP_DECFLOAT',
       msgno TYPE symsgno VALUE '002',
@@ -15,7 +15,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF invalid_character.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF invalid_position,
       msgid TYPE symsgid VALUE 'ABAP_DECFLOAT',
       msgno TYPE symsgno VALUE '003',
@@ -24,7 +24,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF invalid_position.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF cx_abap_decfloat_invalid_char,
       msgid TYPE symsgid VALUE 'ABAP_DECFLOAT',
       msgno TYPE symsgno VALUE '001',
@@ -33,16 +33,16 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF cx_abap_decfloat_invalid_char.
-  DATA invalid_char TYPE sychar01.
+    DATA invalid_char TYPE sychar01.
 
-  CLASS-METHODS class_constructor.
-  METHODS constructor
+    CLASS-METHODS class_constructor.
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL
       !input TYPE string OPTIONAL
       !invalid_char TYPE sychar01 OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_abap_decfloat_invalid_char IMPLEMENTATION.

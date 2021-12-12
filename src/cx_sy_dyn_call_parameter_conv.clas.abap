@@ -4,13 +4,13 @@ CLASS cx_sy_dyn_call_parameter_conv DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_sy_dyn_call_parameter_conv TYPE c LENGTH 32
+    CONSTANTS cx_sy_dyn_call_parameter_conv TYPE c LENGTH 32
  VALUE 'F89C563C29925039E10000000A11447B'. "#EC NOTEXT
-  DATA exception TYPE string READ-ONLY.
+    DATA exception TYPE string READ-ONLY.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -22,7 +22,7 @@ PUBLIC SECTION.
       VALUE(parameter) TYPE string OPTIONAL
       VALUE(param_number) TYPE int4 OPTIONAL
       VALUE(exception) TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_dyn_call_parameter_conv IMPLEMENTATION.

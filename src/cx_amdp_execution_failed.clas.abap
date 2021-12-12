@@ -4,11 +4,11 @@ CLASS cx_amdp_execution_failed DEFINITION
   INHERITING FROM cx_amdp_execution_error
   CREATE PRIVATE.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_amdp_execution_failed TYPE c LENGTH 32 VALUE '005056A207C81EE4B0EA10FEFA948CA4' ##NO_TEXT.
+    CONSTANTS cx_amdp_execution_failed TYPE c LENGTH 32 VALUE '005056A207C81EE4B0EA10FEFA948CA4' ##NO_TEXT.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -21,7 +21,7 @@ PUBLIC SECTION.
       !dbproc_abap_line TYPE i OPTIONAL
       !dbproc_name TYPE string OPTIONAL.
 
-  METHODS get_source_position
+    METHODS get_source_position
     REDEFINITION.
 ENDCLASS.
 

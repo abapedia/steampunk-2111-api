@@ -4,17 +4,17 @@ CLASS cx_xsdany_parse_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_xsdany_parse_error TYPE c LENGTH 32 VALUE '001CC41212C202DC999FDAC55A544FC2'. "#EC NOTEXT
-  DATA error_text TYPE string.
+    CONSTANTS cx_xsdany_parse_error TYPE c LENGTH 32 VALUE '001CC41212C202DC999FDAC55A544FC2'. "#EC NOTEXT
+    DATA error_text TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !error_text TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_xsdany_parse_error IMPLEMENTATION.

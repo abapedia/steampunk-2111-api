@@ -4,20 +4,20 @@ CLASS cx_xslt_deserialization_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_xslt_deserialization_error TYPE c LENGTH 32
+    CONSTANTS cx_xslt_deserialization_error TYPE c LENGTH 32
  VALUE '3BE6BF7BBDC03A34E10000000A1148F9'.
-  DATA tree_position TYPE string.
-  DATA classname TYPE string.
+    DATA tree_position TYPE string.
+    DATA classname TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       VALUE(tree_position) TYPE string OPTIONAL
       VALUE(classname) TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_xslt_deserialization_error IMPLEMENTATION.

@@ -4,17 +4,17 @@ CLASS cx_icu_other_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_icu_other_error TYPE c LENGTH 32 VALUE '0894EF1643A01EEB86B7938D94BC3D34' ##NO_TEXT.
-  DATA other_error TYPE cl_icu_transformation=>s_icu_other_error.
+    CONSTANTS cx_icu_other_error TYPE c LENGTH 32 VALUE '0894EF1643A01EEB86B7938D94BC3D34' ##NO_TEXT.
+    DATA other_error TYPE cl_icu_transformation=>s_icu_other_error.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !other_error TYPE cl_icu_transformation=>s_icu_other_error OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_icu_other_error IMPLEMENTATION.

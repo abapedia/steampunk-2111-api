@@ -4,14 +4,14 @@ CLASS cx_st_serialization_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_st_serialization_error TYPE c LENGTH 32 VALUE 'D5DD8E3F56CDFB4FE10000000A114BF5'. "#EC NOTEXT
-  DATA abap_position TYPE string.
-  DATA classname TYPE string.
-  DATA ref_name TYPE string.
+    CONSTANTS cx_st_serialization_error TYPE c LENGTH 32 VALUE 'D5DD8E3F56CDFB4FE10000000A114BF5'. "#EC NOTEXT
+    DATA abap_position TYPE string.
+    DATA classname TYPE string.
+    DATA ref_name TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -23,7 +23,7 @@ PUBLIC SECTION.
       !abap_position TYPE string OPTIONAL
       !classname TYPE string OPTIONAL
       !ref_name TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_st_serialization_error IMPLEMENTATION.

@@ -3,13 +3,13 @@ CLASS cx_badi_not_single_use DEFINITION
   INHERITING FROM cx_badi
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_badi_not_single_use IMPLEMENTATION.

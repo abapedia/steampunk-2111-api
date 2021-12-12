@@ -4,12 +4,12 @@ CLASS cx_st_call_method_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_st_call_method_error TYPE c LENGTH 32 VALUE '67F36D4454F06729E10000000A42425B'. "#EC NOTEXT
-  DATA exception_name TYPE string.
+    CONSTANTS cx_st_call_method_error TYPE c LENGTH 32 VALUE '67F36D4454F06729E10000000A42425B'. "#EC NOTEXT
+    DATA exception_name TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -22,14 +22,14 @@ PUBLIC SECTION.
       !includename TYPE string OPTIONAL
       !line TYPE i OPTIONAL.
 
-  METHODS if_message~get_longtext
+    METHODS if_message~get_longtext
     REDEFINITION.
-  METHODS if_message~get_text
+    METHODS if_message~get_text
     REDEFINITION.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 
-  DATA includename TYPE string.
-  DATA line TYPE i.
+    DATA includename TYPE string.
+    DATA line TYPE i.
 ENDCLASS.
 
 CLASS cx_st_call_method_error IMPLEMENTATION.

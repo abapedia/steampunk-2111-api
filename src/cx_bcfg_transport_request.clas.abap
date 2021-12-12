@@ -3,12 +3,12 @@ CLASS cx_bcfg_transport_request DEFINITION
   INHERITING FROM cx_static_check
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_dyn_msg.
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
 
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF cts_factory_error,
         msgid TYPE symsgid VALUE 'SV',
         msgno TYPE symsgno VALUE '205',
@@ -17,7 +17,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF cts_factory_error.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF multiple_transports,
         msgid TYPE symsgid VALUE 'SV',
         msgno TYPE symsgno VALUE '204',
@@ -26,7 +26,7 @@ PUBLIC SECTION.
         attr3 TYPE scx_attrname VALUE '',
         attr4 TYPE scx_attrname VALUE '',
       END OF multiple_transports.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF no_open_transport,
       msgid TYPE symsgid VALUE 'SV',
       msgno TYPE symsgno VALUE '207',
@@ -35,7 +35,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF no_open_transport.
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL.

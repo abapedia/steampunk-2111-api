@@ -4,12 +4,12 @@ CLASS cx_st_match_text DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_st_match_text TYPE c LENGTH 32 VALUE '4F82A2E465D62E4CB8B831BACB1ECA09'. "#EC NOTEXT
-  DATA expected_value TYPE string.
+    CONSTANTS cx_st_match_text TYPE c LENGTH 32 VALUE '4F82A2E465D62E4CB8B831BACB1ECA09'. "#EC NOTEXT
+    DATA expected_value TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -23,7 +23,7 @@ PUBLIC SECTION.
       !actual_namespace TYPE string OPTIONAL
       !actual_value TYPE string OPTIONAL
       !expected_value TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_st_match_text IMPLEMENTATION.

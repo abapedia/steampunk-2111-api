@@ -4,14 +4,14 @@ CLASS cx_st_format_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_st_format_error TYPE c LENGTH 32 VALUE '1D92B33F9D778754E10000000A114BF5'. "#EC NOTEXT
-  DATA node_type TYPE string.
-  DATA uri TYPE string.
-  DATA local_name TYPE string.
+    CONSTANTS cx_st_format_error TYPE c LENGTH 32 VALUE '1D92B33F9D778754E10000000A114BF5'. "#EC NOTEXT
+    DATA node_type TYPE string.
+    DATA uri TYPE string.
+    DATA local_name TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -23,7 +23,7 @@ PUBLIC SECTION.
       !node_type TYPE string OPTIONAL
       !uri TYPE string OPTIONAL
       !local_name TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_st_format_error IMPLEMENTATION.
