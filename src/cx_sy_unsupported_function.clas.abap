@@ -4,16 +4,16 @@ CLASS cx_sy_unsupported_function DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_sy_unsupported_function TYPE c LENGTH 32 VALUE '001560AA0E081DEB89DB444182E28D47'. "#EC NOTEXT
+    CONSTANTS cx_sy_unsupported_function TYPE c LENGTH 32 VALUE '001560AA0E081DEB89DB444182E28D47'. "#EC NOTEXT
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !operation TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_unsupported_function IMPLEMENTATION.

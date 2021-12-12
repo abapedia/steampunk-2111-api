@@ -4,16 +4,16 @@ CLASS cx_sy_dyn_call_illegal_class DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS abstract_class TYPE c LENGTH 32
+    CONSTANTS abstract_class TYPE c LENGTH 32
  VALUE '0573CD3BE9663357E10000000A11447B'. "#EC NOTEXT
-  CONSTANTS cx_sy_dyn_call_illegal_class TYPE c LENGTH 32
+    CONSTANTS cx_sy_dyn_call_illegal_class TYPE c LENGTH 32
  VALUE 'F972CD3BE9663357E10000000A11447B'. "#EC NOTEXT
-  CONSTANTS unknown_class TYPE c LENGTH 32
+    CONSTANTS unknown_class TYPE c LENGTH 32
  VALUE 'FF72CD3BE9663357E10000000A11447B'. "#EC NOTEXT
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -22,7 +22,7 @@ PUBLIC SECTION.
       VALUE(function) TYPE string OPTIONAL
       VALUE(form) TYPE string OPTIONAL
       VALUE(progname) TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_dyn_call_illegal_class IMPLEMENTATION.

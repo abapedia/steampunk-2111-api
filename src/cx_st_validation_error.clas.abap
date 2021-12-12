@@ -4,20 +4,20 @@ CLASS cx_st_validation_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_st_validation_error TYPE c LENGTH 32 VALUE '001560AA0E0802DCA994CD7E7D3E852A'. "#EC NOTEXT
-  CONSTANTS generic_with_value TYPE c LENGTH 32 VALUE '001A4BD2B24A02ECB0E2330315DE1640'. "#EC NOTEXT
-  DATA value TYPE string.
-  DATA type TYPE string.
-  DATA total_digits TYPE string.
-  DATA fraction_digits TYPE string.
-  DATA min_inclusive TYPE string.
-  DATA min_exclusive TYPE string.
-  DATA max_inclusive TYPE string.
-  DATA max_exclusive TYPE string.
+    CONSTANTS cx_st_validation_error TYPE c LENGTH 32 VALUE '001560AA0E0802DCA994CD7E7D3E852A'. "#EC NOTEXT
+    CONSTANTS generic_with_value TYPE c LENGTH 32 VALUE '001A4BD2B24A02ECB0E2330315DE1640'. "#EC NOTEXT
+    DATA value TYPE string.
+    DATA type TYPE string.
+    DATA total_digits TYPE string.
+    DATA fraction_digits TYPE string.
+    DATA min_inclusive TYPE string.
+    DATA min_exclusive TYPE string.
+    DATA max_inclusive TYPE string.
+    DATA max_exclusive TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -34,7 +34,7 @@ PUBLIC SECTION.
       !min_exclusive TYPE string OPTIONAL
       !max_inclusive TYPE string OPTIONAL
       !max_exclusive TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_st_validation_error IMPLEMENTATION.

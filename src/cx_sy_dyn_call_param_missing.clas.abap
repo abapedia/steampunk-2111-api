@@ -4,16 +4,16 @@ CLASS cx_sy_dyn_call_param_missing DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_sy_dyn_call_param_missing TYPE c LENGTH 32
+    CONSTANTS cx_sy_dyn_call_param_missing TYPE c LENGTH 32
  VALUE 'B4D6C63BEACF517BE10000000A11447B'. "#EC NOTEXT
-  CONSTANTS function_param_missing TYPE c LENGTH 32
+    CONSTANTS function_param_missing TYPE c LENGTH 32
  VALUE 'C2D6C63BEACF517BE10000000A11447B'. "#EC NOTEXT
-  CONSTANTS perform_param_missing TYPE c LENGTH 32
+    CONSTANTS perform_param_missing TYPE c LENGTH 32
  VALUE 'A0B5223D6CB0B01FE10000000A11447B'. "#EC NOTEXT
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -24,7 +24,7 @@ PUBLIC SECTION.
       VALUE(progname) TYPE string OPTIONAL
       VALUE(parameter) TYPE string OPTIONAL
       VALUE(param_number) TYPE int4 OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_dyn_call_param_missing IMPLEMENTATION.

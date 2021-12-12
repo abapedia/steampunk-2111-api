@@ -4,11 +4,11 @@ CLASS cx_abap_message_digest DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_message.
 
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF unknown_algorithm,
       msgid TYPE symsgid VALUE 'MD5',
       msgno TYPE symsgno VALUE '004',
@@ -17,7 +17,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF unknown_algorithm.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF param_error,
       msgid TYPE symsgid VALUE 'MD5',
       msgno TYPE symsgno VALUE '005',
@@ -26,7 +26,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF param_error.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF no_memory,
       msgid TYPE symsgid VALUE 'MD5',
       msgno TYPE symsgno VALUE '007',
@@ -35,7 +35,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF no_memory.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF kernel_outdated,
       msgid TYPE symsgid VALUE 'MD5',
       msgno TYPE symsgno VALUE '008',
@@ -44,7 +44,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF kernel_outdated.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF base64_error,
       msgid TYPE symsgid VALUE 'MD5',
       msgno TYPE symsgno VALUE '009',
@@ -53,7 +53,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF base64_error.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF internal_error,
       msgid TYPE symsgid VALUE 'MD5',
       msgno TYPE symsgno VALUE '003',
@@ -62,7 +62,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF internal_error.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF conv_error,
       msgid TYPE symsgid VALUE 'MD5',
       msgno TYPE symsgno VALUE '021',
@@ -71,7 +71,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF conv_error.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF key_error,
       msgid TYPE symsgid VALUE 'MD5',
       msgno TYPE symsgno VALUE '001',
@@ -80,16 +80,16 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF key_error.
-  DATA algorithm TYPE string.
-  DATA rc TYPE i VALUE 0. "#EC NOTEXT .
+    DATA algorithm TYPE string.
+    DATA rc TYPE i VALUE 0. "#EC NOTEXT .
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL
       !algorithm TYPE string OPTIONAL
       !rc TYPE i DEFAULT 0.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_abap_message_digest IMPLEMENTATION.

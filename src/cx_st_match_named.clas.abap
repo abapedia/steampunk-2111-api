@@ -3,15 +3,15 @@ CLASS cx_st_match_named DEFINITION
   INHERITING FROM cx_st_match
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_st_match_named TYPE c LENGTH 32 VALUE 'C0BAF002C0CB574281D2A6949932FAB5'. "#EC NOTEXT
-  DATA expected_name TYPE string.
-  DATA expected_namespace TYPE string.
+    CONSTANTS cx_st_match_named TYPE c LENGTH 32 VALUE 'C0BAF002C0CB574281D2A6949932FAB5'. "#EC NOTEXT
+    DATA expected_name TYPE string.
+    DATA expected_namespace TYPE string.
 
-  DATA expected_open TYPE abap_bool.
+    DATA expected_open TYPE abap_bool.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -27,7 +27,7 @@ PUBLIC SECTION.
       !expected_name TYPE string OPTIONAL
       !expected_namespace TYPE string OPTIONAL
       !expected_open TYPE abap_bool OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_st_match_named IMPLEMENTATION.

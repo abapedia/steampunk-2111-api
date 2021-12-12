@@ -4,16 +4,16 @@ CLASS cx_sy_dyn_call_param_not_found DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS perform_param_not_found TYPE c LENGTH 32
+    CONSTANTS perform_param_not_found TYPE c LENGTH 32
  VALUE 'D220483D09EC556AE10000000A11447B'. "#EC NOTEXT
-  CONSTANTS cx_sy_dyn_call_param_not_found TYPE c LENGTH 32
+    CONSTANTS cx_sy_dyn_call_param_not_found TYPE c LENGTH 32
  VALUE '590AB8396F051547E10000000A11447B'. "#EC NOTEXT
-  CONSTANTS function_param_not_found TYPE c LENGTH 32
+    CONSTANTS function_param_not_found TYPE c LENGTH 32
  VALUE '36D6C63BEACF517BE10000000A11447B'. "#EC NOTEXT
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -24,7 +24,7 @@ PUBLIC SECTION.
       VALUE(progname) TYPE string OPTIONAL
       VALUE(parameter) TYPE string OPTIONAL
       VALUE(param_number) TYPE int4 OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_dyn_call_param_not_found IMPLEMENTATION.

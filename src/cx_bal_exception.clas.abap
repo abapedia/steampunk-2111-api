@@ -4,20 +4,20 @@ CLASS cx_bal_exception DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_dyn_msg.
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
 
-  ALIASES msgty
+    ALIASES msgty
     FOR if_t100_dyn_msg~msgty.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL
       !msgty TYPE symsgty OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_bal_exception IMPLEMENTATION.

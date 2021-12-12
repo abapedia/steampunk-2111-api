@@ -4,17 +4,17 @@ CLASS cx_sy_dyn_call_error DEFINITION
   ABSTRACT
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_sy_dyn_call_error TYPE c LENGTH 32
+    CONSTANTS cx_sy_dyn_call_error TYPE c LENGTH 32
  VALUE '94D2C63BEACF517BE10000000A11447B'. "#EC NOTEXT
-  DATA classname TYPE string READ-ONLY.
-  DATA methodname TYPE string READ-ONLY.
-  DATA function TYPE string READ-ONLY.
-  DATA form TYPE string READ-ONLY.
-  DATA progname TYPE string READ-ONLY.
+    DATA classname TYPE string READ-ONLY.
+    DATA methodname TYPE string READ-ONLY.
+    DATA function TYPE string READ-ONLY.
+    DATA form TYPE string READ-ONLY.
+    DATA progname TYPE string READ-ONLY.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -23,7 +23,7 @@ PUBLIC SECTION.
       VALUE(function) TYPE string OPTIONAL
       VALUE(form) TYPE string OPTIONAL
       VALUE(progname) TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_dyn_call_error IMPLEMENTATION.

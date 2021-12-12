@@ -4,12 +4,12 @@ CLASS cx_rfc_dest_provider_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_dyn_msg.
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
 
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF unknown_destination,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '001',
@@ -18,7 +18,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF unknown_destination.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF unsupported,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '002',
@@ -27,7 +27,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF unsupported.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF dyn_creation_error,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '003',
@@ -36,7 +36,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF dyn_creation_error.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF service_id_invalid,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '005',
@@ -45,7 +45,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF service_id_invalid.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF dest_info_invalid,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '006',
@@ -54,7 +54,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF dest_info_invalid.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF internal_failure,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '007',
@@ -63,7 +63,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF internal_failure.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF dest_already_existing,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '008',
@@ -72,7 +72,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF dest_already_existing.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF rfc_ping_failed,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '009',
@@ -81,7 +81,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF rfc_ping_failed.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF rfcping_failed,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '010',
@@ -90,7 +90,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF rfcping_failed.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF type_mismatch,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '011',
@@ -108,7 +108,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF connection_failed.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF authentication_failed,
       msgid TYPE symsgid VALUE 'S_UNIFIED_CON_COMMON',
       msgno TYPE symsgno VALUE '013',
@@ -117,12 +117,12 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF authentication_failed.
-  DATA: return_code TYPE int4,
+    DATA: return_code TYPE int4,
         actual_type TYPE char1,
         required_type TYPE char1,
         message TYPE char255.
 
-  METHODS: constructor
+    METHODS: constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -135,7 +135,7 @@ PUBLIC SECTION.
         RETURNING
         VALUE(rv_textid) LIKE if_t100_message=>t100key.
 
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_rfc_dest_provider_error IMPLEMENTATION.

@@ -4,16 +4,16 @@ CLASS cx_cmis_filter_not_valid DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_cmis_filter_not_valid TYPE c LENGTH 32 VALUE '005056AB5B8D1EE487D973D027029A39' ##NO_TEXT.
+    CONSTANTS cx_cmis_filter_not_valid TYPE c LENGTH 32 VALUE '005056AB5B8D1EE487D973D027029A39' ##NO_TEXT.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !message_text TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_cmis_filter_not_valid IMPLEMENTATION.

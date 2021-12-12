@@ -4,19 +4,19 @@ CLASS cx_sy_itab_duplicate_key DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_sy_itab_duplicate_key TYPE c LENGTH 32 VALUE '001560AA0E081DEB93F6F034EFE504E2'. "#EC NOTEXT
-  DATA key_name TYPE string.
-  DATA key_comp_values TYPE string.
+    CONSTANTS cx_sy_itab_duplicate_key TYPE c LENGTH 32 VALUE '001560AA0E081DEB93F6F034EFE504E2'. "#EC NOTEXT
+    DATA key_name TYPE string.
+    DATA key_comp_values TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !key_name TYPE string OPTIONAL
       !key_comp_values TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_itab_duplicate_key IMPLEMENTATION.

@@ -4,17 +4,17 @@ CLASS cx_resource_already_closed DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_resource_already_closed TYPE c LENGTH 32 VALUE '000F206A92371DECB18030FE4A64F060'. "#EC NOTEXT
-  DATA resource TYPE REF TO object.
+    CONSTANTS cx_resource_already_closed TYPE c LENGTH 32 VALUE '000F206A92371DECB18030FE4A64F060'. "#EC NOTEXT
+    DATA resource TYPE REF TO object.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !resource TYPE REF TO object OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_resource_already_closed IMPLEMENTATION.

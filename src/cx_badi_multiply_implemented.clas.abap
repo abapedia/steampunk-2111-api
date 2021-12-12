@@ -3,15 +3,15 @@ CLASS cx_badi_multiply_implemented DEFINITION
   INHERITING FROM cx_badi_not_single_use
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_badi_multiply_implemented TYPE c LENGTH 32 VALUE '9F7828CF2928F24281238408F089B32B'. "#EC NOTEXT
+    CONSTANTS cx_badi_multiply_implemented TYPE c LENGTH 32 VALUE '9F7828CF2928F24281238408F089B32B'. "#EC NOTEXT
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_badi_multiply_implemented IMPLEMENTATION.

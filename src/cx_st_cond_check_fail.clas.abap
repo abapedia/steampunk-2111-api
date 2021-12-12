@@ -4,11 +4,11 @@ CLASS cx_st_cond_check_fail DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_st_cond_check_fail TYPE c LENGTH 32 VALUE '5A22ED4F7AD3984F9FDA7D0DA32FC22A'. "#EC NOTEXT
+    CONSTANTS cx_st_cond_check_fail TYPE c LENGTH 32 VALUE '5A22ED4F7AD3984F9FDA7D0DA32FC22A'. "#EC NOTEXT
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -17,7 +17,7 @@ PUBLIC SECTION.
       !xml_path TYPE string OPTIONAL
       !st_ic TYPE i OPTIONAL
       !st_timestamp TYPE scx_st_tstamp OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_st_cond_check_fail IMPLEMENTATION.

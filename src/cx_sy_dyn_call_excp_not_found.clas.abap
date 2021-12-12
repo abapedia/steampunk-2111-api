@@ -4,12 +4,12 @@ CLASS cx_sy_dyn_call_excp_not_found DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_sy_dyn_call_excp_not_found TYPE c LENGTH 32
+    CONSTANTS cx_sy_dyn_call_excp_not_found TYPE c LENGTH 32
  VALUE 'AA09B8396F051547E10000000A11447B'. "#EC NOTEXT
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
@@ -20,7 +20,7 @@ PUBLIC SECTION.
       VALUE(progname) TYPE string OPTIONAL
       VALUE(parameter) TYPE string OPTIONAL
       VALUE(param_number) TYPE int4 OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_sy_dyn_call_excp_not_found IMPLEMENTATION.

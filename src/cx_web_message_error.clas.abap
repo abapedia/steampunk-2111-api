@@ -4,19 +4,19 @@ CLASS cx_web_message_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_dyn_msg.
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL.
-  METHODS get_message_number
+    METHODS get_message_number
     RETURNING
       VALUE(msgno) TYPE symsgno.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_web_message_error IMPLEMENTATION.

@@ -4,11 +4,11 @@ CLASS cx_a4c_destination_not_found DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_a4c_destination_not_found TYPE c LENGTH 32 VALUE '005056AADC561EDA97DA9434898C48CF' ##NO_TEXT.
+    CONSTANTS cx_a4c_destination_not_found TYPE c LENGTH 32 VALUE '005056AADC561EDA97DA9434898C48CF' ##NO_TEXT.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL.

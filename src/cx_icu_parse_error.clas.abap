@@ -4,16 +4,16 @@ CLASS cx_icu_parse_error DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  DATA parse_error TYPE cl_icu_transformation=>s_icu_parse_error.
+    DATA parse_error TYPE cl_icu_transformation=>s_icu_parse_error.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !parse_error TYPE cl_icu_transformation=>s_icu_parse_error OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_icu_parse_error IMPLEMENTATION.

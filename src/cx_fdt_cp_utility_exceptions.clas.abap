@@ -4,12 +4,12 @@ CLASS cx_fdt_cp_utility_exceptions DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_dyn_msg.
-  INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
 
-  CONSTANTS:
+    CONSTANTS:
    BEGIN OF error_message,
       msgid TYPE symsgid VALUE 'FDT_CP_MSG',
       msgno TYPE symsgno VALUE '227',
@@ -18,14 +18,14 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF error_message.
-  DATA message TYPE string.
+    DATA message TYPE string.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL
       !message TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_fdt_cp_utility_exceptions IMPLEMENTATION.

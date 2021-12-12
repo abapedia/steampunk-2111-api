@@ -4,16 +4,16 @@ CLASS cx_cmis_permission_denied DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  CONSTANTS cx_cmis_permission_denied TYPE c LENGTH 32 VALUE '005056AB5B8D1EE487D97D9FE1657A3C' ##NO_TEXT.
+    CONSTANTS cx_cmis_permission_denied TYPE c LENGTH 32 VALUE '005056AB5B8D1EE487D97D9FE1657A3C' ##NO_TEXT.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE textid OPTIONAL
       !previous LIKE previous OPTIONAL
       !message_text TYPE string OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_cmis_permission_denied IMPLEMENTATION.

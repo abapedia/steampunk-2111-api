@@ -4,12 +4,12 @@ CLASS cx_abap_range_conv DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
-  INTERFACES if_t100_message.
-  INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
+    INTERFACES if_t100_dyn_msg.
 
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF expression_not_supported,
       msgid TYPE symsgid VALUE 'SABPRANGES',
       msgno TYPE symsgno VALUE '001',
@@ -18,7 +18,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF expression_not_supported.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF incorrect_expression,
       msgid TYPE symsgid VALUE 'SABPRANGES',
       msgno TYPE symsgno VALUE '002',
@@ -27,7 +27,7 @@ PUBLIC SECTION.
       attr3 TYPE scx_attrname VALUE '',
       attr4 TYPE scx_attrname VALUE '',
     END OF incorrect_expression.
-  CONSTANTS:
+    CONSTANTS:
     BEGIN OF internal_error,
       msgid TYPE symsgid VALUE 'SABPRANGES',
       msgno TYPE symsgno VALUE '003',
@@ -37,11 +37,11 @@ PUBLIC SECTION.
       attr4 TYPE scx_attrname VALUE '',
     END OF internal_error.
 
-  METHODS constructor
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_abap_range_conv IMPLEMENTATION.

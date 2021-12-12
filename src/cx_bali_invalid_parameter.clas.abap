@@ -4,12 +4,12 @@ CLASS cx_bali_invalid_parameter DEFINITION
   FINAL
   CREATE PUBLIC.
 
-PUBLIC SECTION.
-  METHODS constructor
+  PUBLIC SECTION.
+    METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL
       !previous LIKE previous OPTIONAL.
-PROTECTED SECTION.
+  PROTECTED SECTION.
 ENDCLASS.
 
 CLASS cx_bali_invalid_parameter IMPLEMENTATION.
