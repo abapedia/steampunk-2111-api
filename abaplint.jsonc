@@ -12,6 +12,7 @@
     "check_include": true,
     "check_syntax": true,
     "global_class": true,
+    "cds_parser_error": true,
     "implement_methods": false, // yea, false
     "method_implemented_twice": true,
     "parser_error": true,
