@@ -1,6 +1,6 @@
 INTERFACE if_xco_gen_clas_s_fo_i_method PUBLIC.
   TYPES:
-    tt_source TYPE not_released.
+    tt_source TYPE string_table.
 
   DATA:
     method_name TYPE if_xco_gen_clas_s_fo_implmtn=>tv_method_name READ-ONLY,

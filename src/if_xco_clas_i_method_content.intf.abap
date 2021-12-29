@@ -1,6 +1,6 @@
 INTERFACE if_xco_clas_i_method_content PUBLIC.
   TYPES:
-    tt_source TYPE not_released,
+    tt_source TYPE string_table,
 
     BEGIN OF ts_amdp,
       is_function       TYPE abap_bool,
