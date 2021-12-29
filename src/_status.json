@@ -9568,483 +9568,483 @@
     "successors": []
   },
   "tabl,abap_sortorder": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_authorization": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_changes": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_features": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_global_permissions": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_locks": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_par_edit": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_permissions": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_response": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,abp_behv_retrievals": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,address_printform_line": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,arch_stat": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,arfctid": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,authfield_vals": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,authorization_for_object": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,authvalinterval": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,badi_filter_binding": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bal_s_lgnm": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiala": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapialb": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapialc": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiald": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapialf": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapialg": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapialt": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiconvrs": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapicurr": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapicurx": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapicurx31": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiext": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiexta": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiextc": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapif4a": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapif4b": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapif4c": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapif4d": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapif4e": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapif4f": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapif4m": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiflag": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapihtml": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiinfo": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapimoncom": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapimonit": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapimonstr": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiobjid": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiparex": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiparex_help": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiranges": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiret2": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapiretc": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapireti": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapirets": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapishlp": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapisrcsys": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapita": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapitga": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapitgb": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bapi_stand": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,bdwfap_par": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_ace": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_acl": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_acl_capabilities": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_allowable_actions": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_capabilities": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_change_event": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_choice": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_client_property": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_cnt_dlvry_nfo": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_content_raw": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_content_stream": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_date_time": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_extended_features": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_extension": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_id_and_change_token": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_impl_cap": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_key_value": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_key_values": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_object": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_object_container": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_object_in_folder": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_object_in_folder_list": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_object_list": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_object_parent": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_permission_definition": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_permission_mapping": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_principal": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_properties": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_property": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_property_definition": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_property_value": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_query_result": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_query_result_list": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_relationship": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_rendition": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_repository_info": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_type_container": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_type_definition": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_type_list": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_type_mutability": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,cmis_s_type_set_attr": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,fdt_brs_s_trace_header": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,fdt_brs_s_trace_record": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,match_result": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,prxctrl": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,qname": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,repl_result": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,submatch_result": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,swf_pbl_agent": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sww_sont_key": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sxco_s_ar_object_key": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sxco_s_cds_ann_val_member": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sxco_s_cds_ds_parameter": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sxco_s_json_name_mapping": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sxco_s_tab_include": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sxsdduration": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sxsltepar": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,sych_bdl_draft_admin_inc": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,symsg": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "tabl,tsa4c_cp_svc_conn_details": {
-    "status": "NOT_RELEASED",
+    "status": "RELEASED",
     "successors": []
   },
   "ttyp,abap_sortorder_tab": {
@@ -10896,7 +10896,7 @@
     ]
   },
   "ddls,i_apisforsapcoudplatform": {
-    "status": "RELEASED",
+    "status": "DEPRECATED",
     "successors": [
       {
         "type": "DDLS",
@@ -10905,7 +10905,7 @@
     ]
   },
   "ddls,i_businessuser": {
-    "status": "RELEASED",
+    "status": "DEPRECATED",
     "successors": [
       {
         "type": "DDLS",
@@ -11803,27 +11803,27 @@
     ]
   },
   "tabl,bapiret1": {
-    "status": "RELEASED",
+    "status": "DEPRECATED",
     "successors": []
   },
   "tabl,bapireturn": {
-    "status": "RELEASED",
+    "status": "DEPRECATED",
     "successors": []
   },
   "tabl,bapireturn1": {
-    "status": "RELEASED",
+    "status": "DEPRECATED",
     "successors": []
   },
   "tabl,ldbcb": {
-    "status": "RELEASED",
+    "status": "DEPRECATED",
     "successors": []
   },
   "tabl,scx_srcpos": {
-    "status": "RELEASED",
+    "status": "DEPRECATED",
     "successors": []
   },
   "tabl,scx_t100key": {
-    "status": "RELEASED",
+    "status": "DEPRECATED",
     "successors": [
       {
         "type": "TABL",
