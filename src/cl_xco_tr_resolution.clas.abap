@@ -10,7 +10,7 @@ CLASS cl_xco_tr_resolution DEFINITION PUBLIC ABSTRACT CREATE PRIVATE.
 
       resolve_transport_values ABSTRACT
         IMPORTING
-          it_selection_entries       TYPE not_released
+          it_selection_entries       TYPE not_released_ttyp
         RETURNING
           VALUE(rt_transport_values) TYPE tt_transport_values.
 

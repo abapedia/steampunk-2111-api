@@ -21,7 +21,7 @@ CLASS cl_xco_cts_change DEFINITION
           io_cts_wbo_api  TYPE REF TO not_released
         EXPORTING
           es_check_result TYPE not_released
-          et_messages     TYPE not_released,
+          et_messages     TYPE not_released_ttyp,
 
       insert ABSTRACT
         IMPORTING
@@ -29,7 +29,7 @@ CLASS cl_xco_cts_change DEFINITION
           io_cts_wbo_api TYPE REF TO not_released
         EXPORTING
           ev_result      TYPE c
-          et_messages    TYPE not_released.
+          et_messages    TYPE not_released_ttyp.
 ENDCLASS.
 
 CLASS cl_xco_cts_change IMPLEMENTATION.

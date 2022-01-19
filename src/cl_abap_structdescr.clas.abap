@@ -21,7 +21,7 @@ CLASS cl_abap_structdescr DEFINITION
       VALUE(p_langu) TYPE langu DEFAULT sy-langu
       !p_including_substructres TYPE abap_bool DEFAULT abap_false
       RETURNING
-      VALUE(p_field_list) TYPE not_released
+      VALUE(p_field_list) TYPE not_released_ttyp
       EXCEPTIONS
       not_found
       no_ddic_type.

@@ -7,7 +7,7 @@ INTERFACE if_xco_clas_i_method_content PUBLIC.
       database_type     TYPE REF TO cl_xco_amdp_db_type,
       database_language TYPE REF TO cl_xco_amdp_db_language,
       database_options  TYPE sxco_t_amdp_db_options,
-      database_entities TYPE not_released,
+      database_entities TYPE not_released_ttyp,
     END OF ts_amdp,
 
     BEGIN OF ts_content,

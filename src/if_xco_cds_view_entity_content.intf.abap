@@ -4,9 +4,9 @@ INTERFACE if_xco_cds_view_entity_content PUBLIC.
       view_entity       TYPE sxco_cds_object_name,
       parameters        TYPE sxco_t_cds_ds_parameter,
       alias             TYPE sxco_ddef_alias_name,
-      inner_joins       TYPE not_released,
-      left_outer_joins  TYPE not_released,
-      right_outer_joins TYPE not_released,
+      inner_joins       TYPE not_released_ttyp,
+      left_outer_joins  TYPE not_released_ttyp,
+      right_outer_joins TYPE not_released_ttyp,
     END OF ts_data_source,
 
     BEGIN OF ts_content,
@@ -15,7 +15,7 @@ INTERFACE if_xco_cds_view_entity_content PUBLIC.
       root_indicator    TYPE abap_bool,
       name_list         TYPE sxco_t_cds_field_names,
       where             TYPE REF TO if_xco_ddl_expr_condition,
-      group_by          TYPE not_released,
+      group_by          TYPE not_released_ttyp,
     END OF ts_content.
 
   DATA:

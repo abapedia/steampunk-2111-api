@@ -100,7 +100,7 @@ CLASS cl_abap_typedescr DEFINITION
       no_ddic_type.
     METHODS get_ddic_object
       RETURNING
-      VALUE(p_object) TYPE not_released
+      VALUE(p_object) TYPE not_released_ttyp
       EXCEPTIONS
       not_found
       no_ddic_type.

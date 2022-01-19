@@ -24,7 +24,7 @@ CLASS cl_xco_ddef_fld_text_attribute DEFINITION PUBLIC ABSTRACT CREATE PRIVATE.
         IMPORTING
           io_text_persistence       TYPE REF TO not_released
         RETURNING
-          VALUE(rt_language_values) TYPE not_released,
+          VALUE(rt_language_values) TYPE not_released_ttyp,
 
       write_value ABSTRACT
         IMPORTING

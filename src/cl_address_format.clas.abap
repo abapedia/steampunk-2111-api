@@ -6,7 +6,7 @@ CLASS cl_address_format DEFINITION
 
   PUBLIC SECTION.
 
-    TYPES tt_printform_table TYPE not_released.
+    TYPES tt_printform_table TYPE not_released_ttyp.
     CLASS-METHODS get_instance
       RETURNING
       VALUE(ro_instance) TYPE REF TO cl_address_format.
