@@ -7,7 +7,6 @@ CLASS xco_cp DEFINITION PUBLIC FINAL CREATE PRIVATE.
       current     TYPE REF TO if_xco_cp_std_current READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       language
         IMPORTING

@@ -13,8 +13,6 @@ CLASS xco_cp_bal DEFINITION PUBLIC FINAL CREATE PRIVATE.
 
       for                TYPE REF TO if_xco_cp_bal_source_factory READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_bal IMPLEMENTATION.

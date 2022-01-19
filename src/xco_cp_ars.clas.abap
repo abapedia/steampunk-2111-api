@@ -7,8 +7,6 @@ CLASS xco_cp_ars DEFINITION PUBLIC FINAL CREATE PRIVATE.
 
       api_state        TYPE REF TO cl_xco_cp_ars_api_state_fctry READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_ars IMPLEMENTATION.

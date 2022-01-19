@@ -8,8 +8,6 @@ CLASS xco_cp_table_type DEFINITION PUBLIC FINAL CREATE PRIVATE.
       primary_key   TYPE REF TO if_xco_tt_primary_key_factory READ-ONLY,
       secondary_key TYPE REF TO if_xco_tt_secondary_key_factry READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_table_type IMPLEMENTATION.

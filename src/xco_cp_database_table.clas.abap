@@ -8,8 +8,6 @@ CLASS xco_cp_database_table DEFINITION PUBLIC FINAL CREATE PRIVATE.
       buffering        TYPE REF TO cl_xco_dbt_buffering_f READ-ONLY,
       buffering_type   TYPE REF TO cl_xco_dbt_buffering_type_f READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_database_table IMPLEMENTATION.

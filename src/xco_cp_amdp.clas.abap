@@ -5,8 +5,6 @@ CLASS xco_cp_amdp DEFINITION PUBLIC FINAL CREATE PRIVATE.
       database_language TYPE REF TO cl_xco_cp_amdp_db_language_f READ-ONLY,
       database_option   TYPE REF TO cl_xco_cp_amdp_db_option_f READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_amdp IMPLEMENTATION.

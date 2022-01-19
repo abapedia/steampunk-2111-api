@@ -13,8 +13,7 @@ CLASS cl_sxml_table_writer DEFINITION
         !encoding   TYPE string
       RAISING
         cx_sxml_illegal_argument_error.
-    METHODS destructor
-        NOT AT END OF MODE.
+
     METHODS get_output
       IMPORTING
         !retain_output TYPE abap_bool DEFAULT abap_true

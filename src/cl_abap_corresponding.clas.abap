@@ -34,8 +34,6 @@ CLASS cl_abap_corresponding DEFINITION
     CONSTANTS mapping_value TYPE i VALUE 16 ##NO_TEXT.
     CONSTANTS mapping_default_value TYPE i VALUE 32 ##NO_TEXT.
 
-    METHODS destructor
-      NOT AT END OF MODE.
     CLASS-METHODS create
       IMPORTING
       !source TYPE data

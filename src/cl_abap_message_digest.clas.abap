@@ -10,7 +10,7 @@ CLASS cl_abap_message_digest DEFINITION
       !if_algorithm TYPE string
       RAISING
       cx_abap_message_digest.
-    METHODS destructor.
+
     CLASS-METHODS get_instance
       IMPORTING
       !if_algorithm TYPE string DEFAULT 'SHA1'

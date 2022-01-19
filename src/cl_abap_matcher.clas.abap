@@ -143,8 +143,7 @@ CLASS cl_abap_matcher DEFINITION
       !table TYPE STANDARD TABLE OPTIONAL
       RAISING
       cx_sy_matcher.
-    METHODS destructor
-      NOT AT END OF MODE.
+
     METHODS find_all
       RETURNING
       VALUE(matches) TYPE match_result_tab

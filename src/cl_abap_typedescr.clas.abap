@@ -109,7 +109,6 @@ CLASS cl_abap_typedescr DEFINITION
       !p_property_kind TYPE abap_typepropkind
       RETURNING
       VALUE(p_abap_bool) TYPE abap_bool.
-    CLASS-METHODS class_constructor.
     METHODS is_instantiatable
       ABSTRACT
       RETURNING

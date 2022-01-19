@@ -7,7 +7,6 @@ CLASS cl_proxy_client DEFINITION
 
     INTERFACES if_proxy_client.
 
-    CLASS-METHODS class_constructor.
     METHODS constructor
       IMPORTING
       !intf_name TYPE char30 OPTIONAL

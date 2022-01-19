@@ -9,8 +9,6 @@ CLASS xco_cp_generation_tabl DEFINITION PUBLIC FINAL CREATE PRIVATE.
     CLASS-DATA:
       for TYPE ts_for READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_generation_tabl IMPLEMENTATION.

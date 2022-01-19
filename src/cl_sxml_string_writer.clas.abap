@@ -14,8 +14,7 @@ CLASS cl_sxml_string_writer DEFINITION
         !encoding                 TYPE string DEFAULT `UTF-8`
       RAISING
         cx_sxml_illegal_argument_error.
-    METHODS destructor
-        NOT AT END OF MODE.
+
     METHODS get_output
       IMPORTING
         !retain_output TYPE abap_bool DEFAULT abap_true

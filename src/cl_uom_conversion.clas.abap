@@ -17,7 +17,6 @@ CLASS cl_uom_conversion DEFINITION
     TYPES ty_buffer_ctr TYPE char1.
     TYPES ty_context_switch TYPE boolean.
 
-    CLASS-METHODS class_constructor.
     CLASS-METHODS create
       IMPORTING
       VALUE(buffer_control) TYPE ty_buffer_ctr OPTIONAL

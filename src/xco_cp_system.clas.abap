@@ -7,7 +7,6 @@ CLASS xco_cp_system DEFINITION PUBLIC FINAL CREATE PRIVATE.
       languages             TYPE REF TO if_xco_cp_sys_api_languages READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       user
         IMPORTING

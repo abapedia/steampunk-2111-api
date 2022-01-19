@@ -45,7 +45,7 @@ CLASS cl_abap_db_x_locator DEFINITION
       cx_parameter_invalid_range
       cx_resource_already_closed
       cx_sy_range_out_of_bounds.
-    METHODS destructor.
+
 ENDCLASS.
 
 CLASS cl_abap_db_x_locator IMPLEMENTATION.

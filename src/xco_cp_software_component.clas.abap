@@ -4,8 +4,6 @@ CLASS xco_cp_software_component DEFINITION PUBLIC FINAL CREATE PRIVATE.
       changeability TYPE REF TO cl_xco_sc_changeability_f READ-ONLY,
       extendability TYPE REF TO cl_xco_sc_extendability_f READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_software_component IMPLEMENTATION.

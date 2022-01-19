@@ -10,7 +10,6 @@ CLASS cl_rfc_destination_provider DEFINITION
       .
 
     CLASS-METHODS:
-      class_constructor,
 
       create_by_cloud_destination
         IMPORTING

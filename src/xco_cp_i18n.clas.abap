@@ -3,8 +3,6 @@ CLASS xco_cp_i18n DEFINITION PUBLIC FINAL CREATE PRIVATE.
     CLASS-DATA:
       target TYPE REF TO if_xco_cp_i18n_target_factory READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_i18n IMPLEMENTATION.

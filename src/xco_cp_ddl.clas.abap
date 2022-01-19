@@ -6,7 +6,6 @@ CLASS xco_cp_ddl DEFINITION PUBLIC FINAL CREATE PRIVATE.
       data_source TYPE REF TO if_xco_ddl_expr_data_source_f READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       field
         IMPORTING

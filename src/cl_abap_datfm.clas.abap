@@ -18,7 +18,7 @@ CLASS cl_abap_datfm DEFINITION
       !im_datfm TYPE ty_datfm
       RETURNING
       VALUE(re_is_valid) TYPE abap_bool.
-    CLASS-METHODS class_constructor.
+
     CLASS-METHODS conv_date_ext_to_int
       IMPORTING
       !im_datext TYPE csequence

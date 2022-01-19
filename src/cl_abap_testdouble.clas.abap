@@ -14,9 +14,6 @@ CLASS cl_abap_testdouble DEFINITION  PUBLIC  FINAL CREATE PRIVATE FOR TESTING.
       verify_expectations
         IMPORTING double TYPE REF TO object.
 
-    CLASS-METHODS
-      class_constructor.
-
 ENDCLASS.
 
 CLASS cl_abap_testdouble IMPLEMENTATION.

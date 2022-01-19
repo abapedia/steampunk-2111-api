@@ -6,7 +6,6 @@ CLASS xco_cp_dcl DEFINITION PUBLIC FINAL CREATE PRIVATE.
       condition  TYPE REF TO if_xco_dcl_cond_factory READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       field
         IMPORTING

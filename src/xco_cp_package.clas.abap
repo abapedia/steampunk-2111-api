@@ -5,8 +5,6 @@ CLASS xco_cp_package DEFINITION PUBLIC FINAL CREATE PRIVATE.
 
       filter TYPE REF TO if_xco_cp_pkg_filter_factory READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_package IMPLEMENTATION.

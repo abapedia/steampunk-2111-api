@@ -21,8 +21,6 @@ CLASS cl_sxml_string_reader DEFINITION
         !keep_whitespace TYPE abap_bool DEFAULT abap_false
       RETURNING
         VALUE(reader)    TYPE REF TO if_sxml_reader.
-    METHODS destructor
-        NOT AT END OF MODE.
 
 ENDCLASS.
 

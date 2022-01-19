@@ -24,7 +24,7 @@ CLASS cl_abap_x_writer DEFINITION
       FOR if_abap_x_writer~write.
 
     METHODS constructor.
-    METHODS destructor NOT AT END OF MODE.
+
   PROTECTED SECTION.
 ENDCLASS.
 

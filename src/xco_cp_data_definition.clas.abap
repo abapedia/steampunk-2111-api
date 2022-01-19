@@ -8,8 +8,6 @@ CLASS xco_cp_data_definition DEFINITION PUBLIC FINAL CREATE PRIVATE.
       object_read_state TYPE REF TO cl_xco_cp_ddef_obj_rd_state_f READ-ONLY,
       object_state      TYPE REF TO cl_xco_ddef_object_state_f READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_data_definition IMPLEMENTATION.

@@ -7,8 +7,6 @@ CLASS cl_osql_test_environment DEFINITION
     INTERFACES: if_osql_test_environment.
 
     CLASS-METHODS:
-
-      class_constructor,
       create
         IMPORTING
           i_dependency_list TYPE if_osql_test_environment~ty_t_sobjnames

@@ -35,7 +35,6 @@ CLASS cx_abap_decfloat_invalid_char DEFINITION
     END OF cx_abap_decfloat_invalid_char.
     DATA invalid_char TYPE sychar01.
 
-    CLASS-METHODS class_constructor.
     METHODS constructor
     IMPORTING
       !textid LIKE if_t100_message=>t100key OPTIONAL

@@ -11,7 +11,6 @@ CLASS cl_abap_db_c_writer DEFINITION
     ALIASES get_statement_handle
       FOR if_abap_db_writer~get_statement_handle.
 
-    METHODS destructor.
   PROTECTED SECTION.
 
 ENDCLASS.

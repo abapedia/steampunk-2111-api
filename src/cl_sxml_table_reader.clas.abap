@@ -21,8 +21,6 @@ CLASS cl_sxml_table_reader DEFINITION
         VALUE(reader) TYPE REF TO if_sxml_reader
       RAISING
         cx_sxml_illegal_argument_error.
-    METHODS destructor
-        NOT AT END OF MODE.
 
 ENDCLASS.
 

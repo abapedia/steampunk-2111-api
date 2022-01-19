@@ -11,9 +11,6 @@ CLASS xco_cp_abap_repository DEFINITION PUBLIC FINAL CREATE PRIVATE.
 
       filter      TYPE REF TO if_xco_cp_ar_filter_factory READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
-
 ENDCLASS.
 
 CLASS xco_cp_abap_repository IMPLEMENTATION.

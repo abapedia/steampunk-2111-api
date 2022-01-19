@@ -96,8 +96,7 @@ CLASS cl_abap_regex DEFINITION
       VALUE(no_submatches) TYPE abap_bool DEFAULT abap_false
       RAISING
       cx_sy_regex.
-    METHODS destructor
-      NOT AT END OF MODE.
+
     METHODS create_matcher
       IMPORTING
       !text TYPE clike OPTIONAL

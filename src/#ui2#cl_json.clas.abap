@@ -43,7 +43,6 @@ CLASS /ui2/cl_json DEFINITION
     CONSTANTS version TYPE i VALUE 15. "#EC NOTEXT
     CLASS-DATA mc_json_type TYPE string READ-ONLY.
 
-    CLASS-METHODS class_constructor.
     CLASS-METHODS string_to_xstring
       IMPORTING
         !in        TYPE string

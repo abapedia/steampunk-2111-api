@@ -11,7 +11,6 @@ CLASS xco_cp_table DEFINITION
     CLASS-DATA cardinality TYPE REF TO cl_xco_tab_fkey_cardinality_f READ-ONLY.
     CLASS-DATA proposal TYPE REF TO if_xco_cp_tab_psl_factory READ-ONLY.
 
-    CLASS-METHODS class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_table IMPLEMENTATION.

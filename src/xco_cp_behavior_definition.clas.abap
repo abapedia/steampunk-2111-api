@@ -5,8 +5,6 @@ CLASS xco_cp_behavior_definition DEFINITION PUBLIC FINAL CREATE PRIVATE.
       standard_operation  TYPE REF TO cl_xco_bdef_standard_operatn_f READ-ONLY,
       evaluation          TYPE REF TO cl_xco_bdef_evaluation_f READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_behavior_definition IMPLEMENTATION.

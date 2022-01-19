@@ -12,7 +12,6 @@ CLASS xco_cp_abap DEFINITION PUBLIC FINAL CREATE PRIVATE.
       type       TYPE ts_type READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       class
         IMPORTING

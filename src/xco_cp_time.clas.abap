@@ -6,7 +6,6 @@ CLASS xco_cp_time DEFINITION PUBLIC FINAL CREATE PRIVATE.
       time_zone TYPE REF TO if_xco_cp_tm_time_zone_factory READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       date
         IMPORTING

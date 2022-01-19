@@ -25,7 +25,7 @@ CLASS cl_abap_tstmp DEFINITION
       RAISING
       cx_parameter_invalid_range
       cx_tstmp_internal_error.
-    CLASS-METHODS class_constructor.
+
     CLASS-METHODS add
       IMPORTING
       !tstmp TYPE p

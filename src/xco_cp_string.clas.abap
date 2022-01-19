@@ -5,7 +5,6 @@ CLASS xco_cp_string DEFINITION PUBLIC FINAL CREATE PRIVATE.
       decomposition TYPE REF TO if_xco_cp_string_dcmp_factory READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       builder
         RETURNING

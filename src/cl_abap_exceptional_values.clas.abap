@@ -6,7 +6,6 @@ CLASS cl_abap_exceptional_values DEFINITION
 
   PUBLIC SECTION.
 
-    CLASS-METHODS class_constructor.
     CLASS-METHODS get_max_value
       IMPORTING
       !in TYPE any

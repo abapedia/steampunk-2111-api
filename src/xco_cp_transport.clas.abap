@@ -9,8 +9,6 @@ CLASS xco_cp_transport DEFINITION PUBLIC FINAL CREATE PRIVATE.
       filter     TYPE REF TO if_xco_cp_tr_filter_factory READ-ONLY,
       resolution TYPE REF TO cl_xco_cp_tr_resolution_fctry READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_transport IMPLEMENTATION.

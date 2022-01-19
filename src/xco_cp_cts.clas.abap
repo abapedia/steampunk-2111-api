@@ -8,8 +8,6 @@ CLASS xco_cp_cts DEFINITION PUBLIC FINAL CREATE PRIVATE.
 
       change_scenario TYPE REF TO if_xco_cp_cts_change_scnr_fct READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_cts IMPLEMENTATION.

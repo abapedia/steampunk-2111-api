@@ -4,8 +4,6 @@ CLASS xco_cp_transformation DEFINITION PUBLIC FINAL CREATE PRIVATE.
       state          TYPE REF TO cl_xco_cp_tf_state_f READ-ONLY,
       content_origin TYPE REF TO cl_xco_cp_tf_content_origin_f READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_transformation IMPLEMENTATION.

@@ -5,8 +5,6 @@ CLASS xco_cp_domain DEFINITION PUBLIC FINAL CREATE PRIVATE.
 
       text_attribute TYPE REF TO cl_xco_cp_doma_text_attr_f READ-ONLY.
 
-    CLASS-METHODS:
-      class_constructor.
 ENDCLASS.
 
 CLASS xco_cp_domain IMPLEMENTATION.

@@ -8,7 +8,6 @@ CLASS xco_cp_abap_dictionary DEFINITION PUBLIC FINAL CREATE PRIVATE.
       object_state      TYPE REF TO cl_xco_ad_object_state_f READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       database_table
         IMPORTING

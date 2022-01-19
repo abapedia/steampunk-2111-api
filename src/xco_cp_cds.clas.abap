@@ -8,7 +8,6 @@ CLASS xco_cp_cds DEFINITION PUBLIC FINAL CREATE PRIVATE.
       annotations                 TYPE REF TO if_xco_cp_cds_api_annotations READ-ONLY.
 
     CLASS-METHODS:
-      class_constructor,
 
       access_control
         IMPORTING

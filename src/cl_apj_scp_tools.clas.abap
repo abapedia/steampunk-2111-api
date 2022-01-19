@@ -32,7 +32,7 @@ CLASS cl_apj_scp_tools DEFINITION
     CLASS-METHODS get_own_restart_number
       RETURNING
       VALUE(rv_length) TYPE i.
-    CLASS-METHODS class_constructor.
+
 ENDCLASS.
 
 CLASS cl_apj_scp_tools IMPLEMENTATION.

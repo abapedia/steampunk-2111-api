@@ -15,8 +15,6 @@ CLASS cl_icu_transformation DEFINITION
     TYPES   pre_context(16) TYPE c.
     TYPES   post_context(16) TYPE c.
     TYPES END OF s_icu_parse_error.
-
-    METHODS destructor.
     CLASS-METHODS create_instance_from_id
       IMPORTING
         !im_id    TYPE cl_icu_transformation=>icu_transformation_id
